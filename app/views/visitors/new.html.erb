@@ -1,0 +1,16 @@
+<h3>Home</h3>
+<p>Welcome to the home of <%= @owner.name %>.</p>
+<p>I was born on <%= @owner.birthdate %>.</p>
+<p>Only <%= @owner.countdown %> days until my birthday!</p>
+
+<%= notice %>
+<%= flash[:notice] %>
+ 
+ 
+<% flash.each do |key, value|  %>
+<div style="background:lightyellow; border:1px solid black"  class="<%= key %>" > <%= value %> </div>
+
+
+<%end
+
+%>
